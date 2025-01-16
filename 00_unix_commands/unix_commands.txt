@@ -1,0 +1,50 @@
+1. mkdir <directory_name> (make directory). Creates a folder.
+
+2. cd <directory_name> (change directory). Changes the currect directory to the specified one.
+
+3. code <file_name>. Creates a file and opens it in a text editor.
+
+4. ls (list). Shows the content of the current directory.
+
+5. pwd (print working directory). Shows the path of the current directory.
+
+6. clear - clears the terminal
+
+7. gcc <file_name (c source code)> - compile the program.
+
+8. ./<executable_file> - runs the program.
+
+9. \ - escape (character) - \n   \* escape sequence
+
+* multilist comment      */
+
+int main() {   }  - main function
+
+<stdio.h> - header file
+
+void - represents no data, same as putting nothing
+
+printf( " Welcome to C!\n");  - format control string
+
+\n creates a new line
+
+\ is called escape character
+
+%d used to print the value of a variable
+
+variables use underscores
+
+V int A5; is different from int a5;
+
+write a C program that produce,  make int for this
+Name: John Doe
+Course ID: 2271 
+Student ID: 10234
+Student ID - Course ID is: 7963
+
+sum = intereger1 + integer2; // assign total to sum
+
+d stands for decimal for printf ("%d")
+
+\n - escape sequence / conversion specifier
+
