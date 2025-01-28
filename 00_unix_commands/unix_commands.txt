@@ -48,3 +48,24 @@ d stands for decimal for printf ("%d")
 
 \n - escape sequence / conversion specifier
 
+scanf("%d", &integer1); // read an integer
+
+git add . or git add file name
+git commit -m
+git push
+
+puts("Enter the number:"); - similar to print f put less options
+
+
+%c for "
+
+(" %c I can run %c\n", '"','"')
+
+r%s - reminder
+
+Integer division yeilds an integer result   5/3 is 2.5 but will give 2 even if its 2.99 it will be 2
+
+7/4 evaluated to 1
+Integer- onlt remainder operatior, %, yeilds the remainder after inteer division
+7%4 = 3 
+

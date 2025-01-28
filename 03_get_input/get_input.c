@@ -27,10 +27,14 @@ int main() {
 
     square_perimeter = square_side * 4;
 
+    square_area = square_side*square_side;
+
     //Create the output
 
     printf ("The perimeter of a square with side %d is %d\n", square_side, square_perimeter);
+    printf ("The area of a sqare with side %d is %d\n", square_side, square_area);
 
+    
 
     return 0;
 
