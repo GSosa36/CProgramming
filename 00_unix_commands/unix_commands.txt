@@ -66,6 +66,190 @@ r%s - reminder
 Integer division yeilds an integer result   5/3 is 2.5 but will give 2 even if its 2.99 it will be 2
 
 7/4 evaluated to 1
-Integer- onlt remainder operatior, %, yeilds the remainder after inteer division
+Integer- onlt remainder operatior, %, yields the remainder after integer division
 7%4 = 3 
+
+
+
+
+
+
+
+Thursday, Notes
+
+Exam next week, getting a pratice exam - theory and practice parts - download a software to prevent looking at anything else
+
+ gcc rootes.c -lm
+
+ - lm  means library math
+
+ <math.h> to include math
+
+
+If ... else statements
+
+ if (booleanExpression) {
+
+    statement(s) - for-the-true-case;
+
+ }
+
+ else{
+
+    statement(s)-for-the-false-case;
+
+ }
+
+ %c for character
+
+ char - character
+
+
+
+ Even or odd number
+
+ if(number% 2== 0){
+
+    printf("This is an even number\n");
+
+ }
+ else{
+
+    printf("This is an odd numebr\n");
+
+ }
+
+
+
+float, double, long double
+
+%e or %E   - display a floating-point in exponential notation
+
+%.3f  %.2f %.4f
+
+! - not
+&& - and
+|| - or
+
+
+Sentinel Controlled Loop
+
+product = 3;
+while (product <= 100){
+   product = 3 * product;
+   printf("%d", product);
+} // end while
+
+void print(void){
+
+int c = 1;
+
+while(c <= 10){
+
+   printf("I love coding!);
+   
+   c = c + 1;
+
+}
+}
+
+int i = 1;
+int sum = 0;
+
+while (i <= 10){
+
+sum += i;
+
+i += 1;
+
+print("%d\n", sum);
+
+}
+
+++a - increment a by 1, then uses the new value in calculations
+a++ - uses current value in the calculations then increases by 1
+--b - decrements, change then uses new value
+b-- - same value then change
+
+x = 5
+y = 6
+z = -9
+k = -18
+
+int x = 1;
+int sum = 0;
+
+do{
+   sum += x;
+   x++;
+
+} while(x <= 10);
+
+for (initialization; conditionl; increment){
+   statements;
+}
+
+for (unsighed in counter = 1; counter <= 10; ++counter){
+   printf("%u or cl??", counter)
+}
+
+for(int i = 20; i >= -10; i -= 6){
+
+printf("%d", i);
+
+}
+
+int i = 20;
+
+do{
+
+printf("%d", i);
+i -= 6;
+
+} while(i >= -10)
+
+
+22 18 14 10 6   
+
+Nested loops
+- a loop can be nested inside another loop - consist of an outer loop and one or more inner loops - each time the outer loop is repeated, the inner loops are reentered and start anew
+
+for (int i = 0; 1 < nRows; i++){
+   for(int j = 0; j < nColumns; j++){
+
+      printf("%c", '*');
+
+   }
+   puts("");
+
+}
+
+n = a rand () % b;
+a is shifting value (which is equal to the first number in the desired range of consecutive integer) and b is the scaling factor (which is equal to the width of the desired range of consecutive integers)
+
+rand () % 15 - 3  [0; 14] subtract 3  [ -3; 11]
+
+rand () 31 - 7;
+
+#include <stdlib.h>  rand()
+#include <time.h>
+
+srand(time(0));
+
+< data type> * name = NULL; or = &name1;
+
+printf("%d" *name);
+
+void sp(int *a_ptr, int *b_ptr){
+
+   int temp = *a_ptr;
+   *a_ptr = *b_ptr;
+   *b_ptr = temp;
+
+}
+
+array 0 to n - 1; n = number of elements
+<data type> name [size];
+int grade[10]  10 is 10 numbers 
+printf("%d" grade[0]);
 

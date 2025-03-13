@@ -21,6 +21,9 @@ void printCourse(int course_number);
 void describleWeather(int temp);
 
 
+// The function tha converts the given number of miles to kilometers
+double milesToKmns(int miles);
+
 
 /********************************************************************* */
 
@@ -45,6 +48,15 @@ int main(void){
     scanf("%d",&temp);
     describleWeather(temp);
     
+    //test miles to kilometers
+    
+    
+    double miles = milesToKmns(123);
+    double kms = milesToKmns(kms);
+    printf("Enter in miles: ");
+    scanf("%d\n",&miles);
+    printf("%d is this %d kilometers", miles);
+
     return 0;
 }
 
@@ -88,6 +100,16 @@ void describleWeather(int temp){
 
 
     }
+
+
+}
+/**************************************************************** */
+
+double milesToKmns(int miles){
+
+double kms = miles * 1.609;
+
+return kms;
 
 
 }

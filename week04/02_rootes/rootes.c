@@ -52,7 +52,6 @@ void printPrompt(char ch){
 
     printf("Enter the coefficient %c: ", ch);
 
-
 }
 
 /****************************************************/
