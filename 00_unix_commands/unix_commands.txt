@@ -253,3 +253,33 @@ array 0 to n - 1; n = number of elements
 int grade[10]  10 is 10 numbers 
 printf("%d" grade[0]);
 
+
+Arrays are data structures consisting of related data items of the same type.
+is in Contigous memory locations - next to each other
+To define an array, you specify the type of each element and the number of elements in the square brackets
+int a[10];
+Any element may be referenced with an array name an undex (position number) in square brackets
+An index must be an integer or an integer expression
+first element is 0 the last is the size - 1
+
+the def int b[100], x[27];
+reserves 100 elements for integer array b and 27 elements for integer array x
+
+Ch 6. Array and Strings
+
+#define
+
+int arr[10];
+datatype name[size];
+
+C has no array bounds checking to prevent the program from referring to an element that does not exist
+DO NOT refer to an element outside the array bounds.
+When looping through an array, the array index should never go below 0 and should always be less than the total number of elements in the array
+
+#define preprocessor directive
+- defines a symbolic constant
+a symbolic constant is an identifier that's replaced with replacement text by the C preprocessor before the program is compiled
+Using symbolic contants to specify array size
+
+
+int n[5] = {24, 48, 192, -49, 4};
