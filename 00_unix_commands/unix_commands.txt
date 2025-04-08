@@ -283,3 +283,30 @@ Using symbolic contants to specify array size
 
 
 int n[5] = {24, 48, 192, -49, 4};
+
+char c = 'A';
+char c [] = "Hello";
+
+The value of a string is the address of its first character
+In C string is a pointer to the string's first character.
+char color[] = "blue"
+
+Not allocating sufficient space in a character array to store the null character that terminates a string is an error
+
+'\0' - null
+
+
+ char *strcpy( char *s1, const cahr *s2) - copies string s2 into array s1
+
+char *strcat( char *s1, const cahr *s2) - 
+
+
+Multidimensional Array can represent tables of values consisting of information arranged in rows and columns
+can more than two subscripts
+
+int a[5][10] - 5 rows , 10 columms
+int a[3][4] 
+
+int b[2][2] = {{1,2}, {3,4}};
+
+
