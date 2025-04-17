@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+#define NAME_SIZE 30
+#define STREET_SIZE 30
+#define CITY_SIZE 30
+
+/***********************************************************************/
+
+
+typedef struct{
+
+char street[STREET_SIZE];
+char city[CITY_SIZE];
+int zip_code;
+
+} Address;
+
+
+// Create a new data type (Create a structure)
+typedef struct {
+
+    // The members (variables) of a structure
+    char first_name[NAME_SIZE];
+    int age;
+    Address home_address;
+
+} Student;
+
+/********************************************************************/
+
+void printStudentInfo(const  Student *st);
+
+void printAddress(const Address *adr);
+
+
+/********************************************************************/
+
+int main(){
+
+    // Create an address object
+    Address adr = {.city = "Lakeland", .street = "Main", .zip_code = 33876};
+
+    printAddress(&adr);
+
+
+
+    return 0;
+}
+
+/********************************************************************/
+
+void printStudentInfo(const Student *st){
+    
+
+    printf("%s\n", st->first_name);
+    printf("%d\n", st->age);
+
+
+
+
+}   
+
+
+/********************************************************************/
+
+void printAddress(const Address *adr){
+
+    printf("%s\n%s\n%d\n", adr->street, adr->city, adr->zip_code);
+
+
+
+}

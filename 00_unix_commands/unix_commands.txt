@@ -310,3 +310,40 @@ int a[3][4]
 int b[2][2] = {{1,2}, {3,4}};
 
 
+Structure definition - Structures are derived data types- they-re constructed using objects of other types
+   - assiging structure variable to structure variable of the same type 
+   - taking the address of a structure variable
+   - accessing the memebers of structure variables
+   - using the size of operator to determine the size of a structure variable
+
+Structures may not be compared using opertors == and != because structure members are not necessarilty stores in consecutive bytes of memeory
+
+
+Initializing Structures
+- Structures can be initialized using initialzer lists as with Arrays
+- to initialze a strucure, follow the variable name in the definition with an equals sign and a brace-enclosed, comma-separated list of initializers
+
+
+
+Working with Files
+   - Opening a file returns a pointer to a FILE structer <stdio.h>
+   - A program refers to each open file with a seperate FILE pointer
+   - fopen opens a file and establishes a "line of communication" with it
+   - Two arguements
+      - a filename (which can include path information leading to the file's location)
+      - a file open mode (r,w,a,r+,w+ and others)
+   - If the file pointer fopen returns is NULL, the file could not be opened
+
+   FILE *file;
+   file = fopen("out.txt", "w");
+
+   fclose(file);
+
+   fprintf(file, "%s", "Hello");
+
+   - Equivalent to printf, but fprintf also recives a FILE pointer argument specifiying the file to which the data will be written
+   - Function fclsoe receives the FILE pointer as an argument
+   - If you do not call fclose explicity, the operating system normally will close the file when program execution terminates
+
+
+   

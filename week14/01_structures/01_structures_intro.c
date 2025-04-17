@@ -2,8 +2,20 @@
     #include <string.h>
 
     #define NAME_SIZE 30
+    #define STREET_SIZE 30
+    #define CITY_SIZE 30
 
 /***********************************************************************/
+
+
+typedef struct{
+
+    char street[STREET_SIZE];
+    char city[CITY_SIZE];
+    int zip_code;
+
+} Address;
+
 
  // Create a new data type (Create a structure)
     struct Student{
@@ -11,8 +23,10 @@
         // The members (variables) of a structure
         char first_name[NAME_SIZE];
         int age;
+        Address home_address;
 
     };
+
 
 /***************************************************************88 */
 
@@ -52,7 +66,7 @@ int main(int argc, char *argv[]){
 
 
     // Create and initialize the student object (variable)
-    struct Student stud2 = { .first_name = "Jack", .age = 20};
+    struct Student stud2 = { .first_name = "Lilly", .age = 19};
 
     printStudentInfo(&stud2);
 
